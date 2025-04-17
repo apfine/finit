@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+.events-section {
+  background: linear-gradient(135deg, #10002b, #240046, #3c096c);
+  color: #f8f8ff;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  font-family: 'Share Tech Mono', monospace;
+  text-align: center;
+}
+
+.events-section h2 {
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+  color: #ff00cc;
+  text-shadow: 0 0 10px #ff00cc, 0 0 30px #00f0ff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.event-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #00f0ff;
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 1.5rem auto;
+  max-width: 600px;
+  backdrop-filter: blur(8px);
+  box-shadow:
+    0 0 15px #ff00cc,
+    0 0 25px #00f0ff,
+    0 0 40px rgba(255, 0, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: scale(1.03);
+  box-shadow:
+    0 0 25px #ff00cc,
+    0 0 45px #00f0ff;
+}
+
+.event-card h3 {
+  font-size: 2rem;
+  color: #00f0ff;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 8px #00f0ff;
+}
+
+.event-card p {
+  font-size: 1.1rem;
+  color: #ffe600;
+  margin: 0.3rem 0;
+  text-shadow: 0 0 5px #ffe600;
+}

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+.team-section {
+  background: linear-gradient(135deg, #0d0221, #1f0b3f, #39065a);
+  color: #f8f8ff;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  font-family: 'Share Tech Mono', monospace;
+  text-align: center;
+}
+
+.team-heading {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  color: #ff00cc;
+  text-shadow: 0 0 10px #ff00cc, 0 0 30px #00f0ff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.team-member {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #ff00cc;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 270px;
+  backdrop-filter: blur(8px);
+  box-shadow:
+    0 0 10px #ff00cc,
+    0 0 20px #00f0ff,
+    0 0 30px rgba(255, 0, 255, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow:
+    0 0 20px #ff00cc,
+    0 0 40px #00f0ff;
+}
+
+.team-member h3 {
+  font-size: 1.5rem;
+  color: #00f0ff;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 5px #00f0ff;
+}
+
+.team-member .role {
+  font-size: 1rem;
+  color: #ffea00;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 5px #ffea00;
+}
+
+.team-member .quote {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #c2f9ff;
+  border-left: 3px solid #ff00cc;
+  padding-left: 1rem;
+  text-shadow: 0 0 5px #00f0ff;
+}
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+  }
+  20%, 22%, 24%, 55% {
+    opacity: 0.5;
+  }
+}
+
+.team-heading {
+  animation: flicker 2s infinite;
+}
